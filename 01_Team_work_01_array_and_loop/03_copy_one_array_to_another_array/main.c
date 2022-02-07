@@ -1,8 +1,9 @@
 #include<stdio.h>
 int main()
 {
-  int arr[100];
   int num;
+  int arr[100];
+  int copyarr[100];
   //input limit  message to user
   printf("Enter your limit  :");
   scanf("%d", &num);
@@ -17,12 +18,16 @@ int main()
     printf(" %d  ",arr[i] );
 
   }
-  //reverse and print the array
-  printf("\nReverse array is :");
-  for(int i=num-1;i>=0;i--){
-    printf(" %d  ",arr[i] );
+  //copy arry element to another null array
+  for(int i=0;i<num;i++){
+//copy
+   copyarr[i]=arr[i];
+  }
+  //print the copyarray
+  printf("\nCopy array is :");
+  for(int i=0;i<num;i++){
+    printf(" %d  ",copyarr[i] );
 
   }
 
-  return 0;
 }

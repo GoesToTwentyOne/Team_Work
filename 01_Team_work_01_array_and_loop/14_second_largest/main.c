@@ -23,7 +23,11 @@ int main()
     if(arr[i]>max){
       second_max=max;
       max=arr[i];
+
      }
+    else if(arr[i]<max && arr[i]>second_max){
+      second_max=arr[i];
+    }
     else{
       printf("second max is :%d\n",second_max );
     }

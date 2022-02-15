@@ -16,12 +16,9 @@ void main(){
 
   printf("\nInput the position which item you want to delete: ");
   scanf("%d",&position);
-/*---- locate the position of i in the array -------*/
   i=0;
   while(i!=position-1)
             i++;
-/*---- the position of i in the array will be replaced by the
-       value of its right */
   while(i<num){
             arr[i]=arr[i+1];
             i++;

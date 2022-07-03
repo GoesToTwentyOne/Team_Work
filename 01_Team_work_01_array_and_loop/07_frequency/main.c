@@ -36,7 +36,7 @@ int main()
     for(int i = 0; i < num; i++){
         if(fr[i] != visited){
             printf("    %d", arr[i]);
-            printf("  %d\n", fr[i]);
+            printf("  frequency %d\n", fr[i]);
         }
     }
     return 0;

@@ -34,4 +34,6 @@ int main()
   printf("\nSum of left diagonal of A matrix %d:\n",sum);
 
   return 0;
+
+
 }
